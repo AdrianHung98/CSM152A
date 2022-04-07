@@ -3,4 +3,4 @@
 Lab1 files
 
 
-Important files located under tb and rtl
+Important files located under lab -> tb and rtl
