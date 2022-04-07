@@ -1,2 +1,0 @@
-vhdtdtfi -lib work C:/Users/Student/Desktop/section6/lab1/lab1/tb/model_uart.v -lang verilog -prj lab1 -o model_uart.spl -module model_uart -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 model_uart.spl C:/Users/Student/Desktop/section6/lab1/lab1/model_uart.sym 
