@@ -1,0 +1,8 @@
+[Inputs]
+RX
+[Outputs]
+TX
+[BiDir]
+[ATTRIBUTES]
+VeriModel model_uart
+
