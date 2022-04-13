@@ -40,4 +40,90 @@
 
 Workshop 1
 
+Debouncing
+
+1.
+- clk_en_d is 1 delayed cycle of clk_en (so if clk_en was currently 1 and then set to 0, then clk_en_d would be 1)
+- step_d delays the signal from button by 3 cycles, and the not step_d[0] and step_d[1] and clk_en_d
+  means that we only update inst_vld when you lift your finger from the button so the signal would
+  be going from 1 to 0 and the clk_en was high
+
+2.
+clk_dv is set with the non-blocking operator right before clk_en is set
+which means that they are assigned at the same time
+so if we did clk_en <= clk_dv[16] we would not have the correct updated value.
+
+3.
+- rectangles with inputs and outputs (ie inst_vld depends on step_d[0], step_d[1], clk_en_d)
+- high level so no gates
+
 clk_en is incremented when the master clock's 18th bit is 1 (so every 2^18 master clock iterations)
+
+1 to 1 on clk_en is 0.001311735000 s to 0.002622455000 s
+So the period is 0.00131072 s.
+
+Signal is high from 0.003933175000 s to 0.003933185000 s
+So T = 1 * 10^-8
+Duty Cycle is (T/P) * 100 = 7.63 * 10^-4 %
+When clk_en is high, clk_dv is 0.
+
+clk_en_d is opposite of clk_en
+
+
+At positive edge of master clock, step_d is set to value of buttonS appended with 2 highest bits of old step_d
+so if step_d = 000, btnS = 1
+then new: step_d = 100
+step_d = 100, btnS = 1
+new: step_d = 110
+step_d = 110, btnS = 1
+new: step_d 111
+
+so if step_d = 111, btnS = 0
+then new: step_d = 011
+step_d = 011, btnS = 0
+new: step_d = 001
+step_d = 001, btnS = 0
+new: step_d 000
+
+so the highest bit in step_d is btnS
+and then we set inst_vld if not step_d[0]
+inst_vld will be 1 if step_d is 010 or 110 and clk_en_d is 1
+
+
+
+2.
+
+
+
+
+Register File
+i_wstb selects whether we are resetting a register
+i_wsel selects which register to reset
+i_wdata is the data to put in the register
+
+1.
+rf[i_wsel] <= i_wdata;
+
+This is sequential because it is being updating on the rising clock edge and it's dependent on the output of the 
+registers that are being read.
+
+2.
+
+   assign o_data_a = rf[i_sel_a];
+   assign o_data_b = rf[i_sel_b];
+
+This is combinatorial because it's only dependent on the inputs.
+
+
+5.
+- screenshot box from schematic verilog makes
+
+
+
+
+
+
+
+
+
+ 
