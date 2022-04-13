@@ -19,7 +19,7 @@ module tb;
    wire                 RsRx;                   // From model_uart0_ of model_uart.v
    wire                 RsTx;                   // From uut_ of nexys3.v
    wire [7:0]           led;                    // From uut_ of nexys3.v
-
+	wire [2:0]           step_d;
    // End of automatics
 
    initial
@@ -65,7 +65,7 @@ module tb;
 //        tskRunPUSH(0,4);
 //        tskRunPUSH(0,0);
 //        tskRunPUSH(1,3);
-//       tskRunMULT(0,1,2);
+//        tskRunMULT(0,1,2);
 //        tskRunADD(2,0,3);
 //        tskRunSEND(0);
 //        tskRunSEND(1);
@@ -98,7 +98,11 @@ module tb;
                 .btnS                   (btnS),
                 .btnR                   (btnR),
                 .clk                    (clk),
-					 .clk_en                 (clk_en)
+					 .clk_en                 (clk_en),
+					 .clk_dv						  (clk_dv),
+					 .clk_en_d					  (clk_en_d),
+					 .step_d                  (step_d[2:0]),
+					 .inst_vld                (inst_vld)
 					 );
 					 
 

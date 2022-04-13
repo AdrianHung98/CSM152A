@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 106: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 110: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\seq_alu.v" Line 32: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
@@ -53,16 +53,16 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\uart.v" Line 209: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 133: Assignment to <arg fmt="%s" index="1">uart_rx_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 137: Assignment to <arg fmt="%s" index="1">uart_rx_data</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 134: Assignment to <arg fmt="%s" index="1">uart_rx_valid</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 138: Assignment to <arg fmt="%s" index="1">uart_rx_valid</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">o_rx_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_top_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v</arg>&quot; line <arg fmt="%s" index="2">134</arg>: Output port &lt;<arg fmt="%s" index="3">o_rx_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_top_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">o_rx_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_top_</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v</arg>&quot; line <arg fmt="%s" index="2">134</arg>: Output port &lt;<arg fmt="%s" index="3">o_rx_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_top_</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

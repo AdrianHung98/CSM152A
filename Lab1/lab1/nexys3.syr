@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: nexys3.prj
 
@@ -136,7 +136,7 @@ Parsing verilog file "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\/seq_defin
 =========================================================================
 
 Elaborating module <nexys3>.
-WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 106: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 110: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <seq>.
 
@@ -168,8 +168,8 @@ WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\uart.
 WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\uart.v" Line 153: Result of 32-bit expression is truncated to fit in 3-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\uart.v" Line 192: Result of 32-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\uart.v" Line 209: Result of 32-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 133: Assignment to uart_rx_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 134: Assignment to uart_rx_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 137: Assignment to uart_rx_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" Line 138: Assignment to uart_rx_valid ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -190,8 +190,8 @@ Synthesizing Unit <nexys3>.
         seq_rf_width = 16
         alu_width = 16
         uart_num_nib = 4
-INFO:Xst:3210 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" line 130: Output port <o_rx_data> of the instance <uart_top_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" line 130: Output port <o_rx_valid> of the instance <uart_top_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" line 134: Output port <o_rx_data> of the instance <uart_top_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" line 134: Output port <o_rx_valid> of the instance <uart_top_> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <arst_ff>.
     Found 17-bit register for signal <clk_dv>.
     Found 1-bit register for signal <clk_en>.
@@ -200,8 +200,8 @@ INFO:Xst:3210 - "C:\Users\Student\Desktop\section6\lab1\lab1\rtl\nexys3.v" line 
     Found 3-bit register for signal <step_d>.
     Found 1-bit register for signal <inst_vld>.
     Found 8-bit register for signal <led>.
-    Found 18-bit adder for signal <n0047> created at line 64.
-    Found 8-bit adder for signal <inst_cnt[7]_GND_1_o_add_14_OUT> created at line 106.
+    Found 17-bit adder for signal <clk_dv_inc<16:0>> created at line 67.
+    Found 8-bit adder for signal <inst_cnt[7]_GND_1_o_add_14_OUT> created at line 110.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  41 D-type flip-flop(s).
@@ -424,17 +424,17 @@ Macro Statistics
  10-bit subtractor                                     : 1
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
- 18-bit adder                                          : 1
+ 17-bit adder                                          : 1
  3-bit adder                                           : 1
  4-bit subtractor                                      : 2
  6-bit subtractor                                      : 2
  8-bit adder                                           : 1
-# Registers                                            : 28
- 1-bit register                                        : 6
+# Registers                                            : 29
+ 1-bit register                                        : 7
  10-bit register                                       : 3
  11-bit register                                       : 2
  16-bit register                                       : 1
- 18-bit register                                       : 1
+ 17-bit register                                       : 1
  2-bit register                                        : 2
  3-bit register                                        : 3
  4-bit register                                        : 2
@@ -465,6 +465,7 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <nexys3>.
+The following registers are absorbed into counter <clk_dv>: 1 register on signal <clk_dv>.
 The following registers are absorbed into counter <inst_cnt>: 1 register on signal <inst_cnt>.
 Unit <nexys3> synthesized (advanced).
 
@@ -523,22 +524,22 @@ Macro Statistics
  16x8-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 10
+# Adders/Subtractors                                   : 9
  10-bit adder                                          : 1
  10-bit subtractor                                     : 1
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
- 18-bit adder                                          : 1
  3-bit adder                                           : 1
  4-bit subtractor                                      : 1
  6-bit subtractor                                      : 2
-# Counters                                             : 2
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
  4-bit down counter                                    : 1
  8-bit up counter                                      : 1
 # Accumulators                                         : 2
  10-bit up accumulator                                 : 2
-# Registers                                            : 189
- Flip-Flops                                            : 189
+# Registers                                            : 172
+ Flip-Flops                                            : 172
 # Multiplexers                                         : 54
  1-bit 2-to-1 multiplexer                              : 14
  1-bit 4-to-1 multiplexer                              : 1
@@ -645,7 +646,7 @@ Top Level Output File Name         : nexys3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 383
+# BELS                             : 382
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 23
@@ -654,7 +655,7 @@ Primitive and Black Box Usage:
 #      LUT4                        : 27
 #      LUT5                        : 54
 #      LUT6                        : 153
-#      MUXCY                       : 39
+#      MUXCY                       : 38
 #      VCC                         : 1
 #      XORCY                       : 41
 # FlipFlops/Latches                : 183
@@ -668,9 +669,9 @@ Primitive and Black Box Usage:
 #      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 19
+# IO Buffers                       : 38
 #      IBUF                        : 10
-#      OBUF                        : 9
+#      OBUF                        : 28
 # DSPs                             : 1
 #      DSP48A1                     : 1
 
@@ -686,15 +687,15 @@ Slice Logic Utilization:
     Number used as Logic:               301  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    312
-   Number with an unused Flip Flop:     129  out of    312    41%  
-   Number with an unused LUT:            11  out of    312     3%  
-   Number of fully used LUT-FF pairs:   172  out of    312    55%  
+ Number of LUT Flip Flop pairs used:    311
+   Number with an unused Flip Flop:     128  out of    311    41%  
+   Number with an unused LUT:            10  out of    311     3%  
+   Number of fully used LUT-FF pairs:   173  out of    311    55%  
    Number of unique control sets:         8
 
 IO Utilization: 
- Number of IOs:                          21
- Number of bonded IOBs:                  20  out of    232     8%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  39  out of    232    16%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of     32     3%  
@@ -736,7 +737,7 @@ Speed Grade: -3
 
    Minimum period: 6.909ns (Maximum Frequency: 144.739MHz)
    Minimum input arrival time before clock: 2.268ns
-   Maximum output required time after clock: 3.634ns
+   Maximum output required time after clock: 3.950ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -746,7 +747,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.909ns (frequency: 144.739MHz)
-  Total number of paths / destination ports: 35447 / 452
+  Total number of paths / destination ports: 35431 / 452
 -------------------------------------------------------------------------
 Delay:               6.909ns (Levels of Logic = 3)
   Source:            inst_wd_5 (FF)
@@ -788,22 +789,22 @@ Offset:              2.268ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 28 / 28
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            inst_cnt_7 (FF)
-  Destination:       led<7> (PAD)
+Offset:              3.950ns (Levels of Logic = 1)
+  Source:            clk_en (FF)
+  Destination:       clk_en (PAD)
   Source Clock:      clk rising
 
-  Data Path: inst_cnt_7 to led<7>
+  Data Path: clk_en to clk_en
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.447   0.616  inst_cnt_7 (inst_cnt_7)
-     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
+     FDR:C->Q             13   0.447   0.932  clk_en (clk_en_OBUF)
+     OBUF:I->O                 2.571          clk_en_OBUF (clk_en)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      3.950ns (3.018ns logic, 0.932ns route)
+                                       (76.4% logic, 23.6% route)
 
 =========================================================================
 
@@ -821,12 +822,12 @@ clk            |    6.909|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.33 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.39 secs
  
 --> 
 
-Total memory usage is 4503484 kilobytes
+Total memory usage is 4503480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   60 (   0 filtered)

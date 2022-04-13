@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+model_uart instance_name (
+    .TX(TX), 
+    .RX(RX)
+    );
+
+

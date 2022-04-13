@@ -2,7 +2,7 @@ module nexys3 (/*AUTOARG*/
    // Outputs
    RsTx, led,
    // Inputs
-   RsRx, sw, btnS, btnR, clk, clk_en
+   RsRx, sw, btnS, btnR, clk, clk_en, clk_dv, clk_en_d, step_d, inst_vld
    );
 
 `include "seq_definitions.v"
@@ -20,6 +20,10 @@ module nexys3 (/*AUTOARG*/
    // Logic
    input        clk;                  // 100MHz
 	output clk_en;
+	output clk_dv;
+	output clk_en_d;
+	output [2:0] step_d;
+	output inst_vld;
    
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)

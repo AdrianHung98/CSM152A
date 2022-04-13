@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/Student/Desktop/section6/lab1/lab1/rtl/seq.v -lang verilog -prj lab1 -o seq.spl -module seq -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 seq.spl C:/Users/Student/Desktop/section6/lab1/lab1/seq.sym 
+vhdtdtfi -lang verilog -prj lab1 -o C:/Users/Student/Desktop/section6/lab1/lab1/seq.tfi -lib work C:/Users/Student/Desktop/section6/lab1/lab1/rtl//seq.v -module seq -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

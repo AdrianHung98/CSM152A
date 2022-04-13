@@ -5,6 +5,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING: File "C:/Users/Student/Desktop/section6/lab1/lab1/tb/tb.v" Line 102.  For instance tb/uut_/, width 17 of formal port clk_dv is not equal to width 1 of actual signal clk_dv.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

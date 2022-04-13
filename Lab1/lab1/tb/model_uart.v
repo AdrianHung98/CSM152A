@@ -46,27 +46,21 @@ module model_uart(/*AUTOARG*/
 		  
 		  if (count == 0)
 		    begin
-    		   //$display("count=0 byte (%s) fullNumber data (%s)", rxData, fullNumber[7:0]); 
 			   fullNumber[7:0] <= rxData[7:0];
 			 end
 		  else if (count == 1)
 		    begin
-    		   //$display("count=1 byte (%s) fullNumber data (%s)", rxData, fullNumber[15:8]);
 			   fullNumber[15:8] <= rxData[7:0];
 			 end
 			else if (count == 2)
 			  begin
-    		   //$display("count=2 byte (%s) fullNumber data (%s)", rxData, fullNumber[23:16]);
 			    fullNumber[23:16] <= rxData[7:0];
 			  end
 			else if (count == 3)
 			  begin
-    		  // $display("count=3 byte (%s) fullNumber data (%s)", rxData, fullNumber[31:24]);
 			    fullNumber[31:24] <= rxData[7:0];
 			  end
-		  
-		 // count = count + 1;
-	  
+		  	  
 		  if (rxData == "\r")
 		    begin
 			   count = 0;

@@ -16,6 +16,7 @@ Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab1/lab1/rtl/nexys3.v
 Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab1/lab1/tb/tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Student/Desktop/section6/lab1/lab1/tb/tb.v" Line 102: Size mismatch in connection of port <clk_dv>. Formal port size is 17-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module model_uart(baud=1000000,name="UA...
 Compiling module seq_rf_default
@@ -33,5 +34,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 12 Verilog Units
 Built simulation executable C:/Users/Student/Desktop/section6/lab1/lab1/tb_isim_beh.exe
-Fuse Memory Usage: 28552 KB
-Fuse CPU Usage: 390 ms
+Fuse Memory Usage: 29176 KB
+Fuse CPU Usage: 421 ms

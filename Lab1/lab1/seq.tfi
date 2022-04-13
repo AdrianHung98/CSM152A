@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+seq instance_name (
+    .o_tx_data(o_tx_data), 
+    .o_tx_valid(o_tx_valid), 
+    .i_tx_busy(i_tx_busy), 
+    .i_inst(i_inst), 
+    .i_inst_valid(i_inst_valid), 
+    .clk(clk), 
+    .rst(rst)
+    );
+
+
