@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Student/Desktop/section6/lab2/significand_tb_isim_beh.exe" -prj "C:/Users/Student/Desktop/section6/lab2/significand_tb_beh.prj" "work.significand_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Student/Desktop/section6/lab2/FPCVT_tb_isim_beh.exe" -prj "C:/Users/Student/Desktop/section6/lab2/FPCVT_tb_beh.prj" "work.FPCVT_tb" "work.glbl" 

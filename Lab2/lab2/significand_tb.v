@@ -29,13 +29,13 @@ module significand_tb;
 
 	// Outputs
 	wire [3:0] F;
-	wire [11:0] D_new2;
+	wire [11:0] D_new;
 
 	// Instantiate the Unit Under Test (UUT)
 	significand uut (
 		.D(D), 
 		.F(F),
-		.D_new2(D_new2)
+		.D_new(D_new)
 	);
 
 	initial begin
@@ -46,11 +46,13 @@ module significand_tb;
 		#100;
       
 		// Add stimulus here
+		#20 D = 12'b111010000000;	
       #20 D = 12'b011010000000;
 		#20 D = 12'b011011000000;
 		#20 D = 12'b111011000000;
-		#20 D = 12'b111010000000;
+		#20 D = 12'b000001111100;
 		#1000 $finish;
+
 	end
       
 endmodule
