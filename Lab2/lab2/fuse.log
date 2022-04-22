@@ -1,21 +1,23 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Student/Desktop/section6/lab2/exponent_tb_isim_beh.exe -prj C:/Users/Student/Desktop/section6/lab2/exponent_tb_beh.prj work.exponent_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Student/Desktop/section6/lab2/significand_tb_isim_beh.exe -prj C:/Users/Student/Desktop/section6/lab2/significand_tb_beh.prj work.significand_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 6
 Turning on mult-threading, number of parallel sub-compilation jobs: 12 
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab2/sign.v" into library work
 Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab2/exponent.v" into library work
-Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab2/exponent_tb.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab2/significand.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/section6/lab2/significand_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module sign
 Compiling module exponent
-Compiling module exponent_tb
+Compiling module significand
+Compiling module significand_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 4 Verilog Units
-Built simulation executable C:/Users/Student/Desktop/section6/lab2/exponent_tb_isim_beh.exe
-Fuse Memory Usage: 27984 KB
-Fuse CPU Usage: 327 ms
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/Student/Desktop/section6/lab2/significand_tb_isim_beh.exe
+Fuse Memory Usage: 27956 KB
+Fuse CPU Usage: 312 ms

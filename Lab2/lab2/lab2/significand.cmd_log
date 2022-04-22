@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab2/significand.xst" -ofn "C:/Users/Student/Desktop/section6/lab2/significand.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 significand.ngc significand.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o significand_map.ncd significand.ngd significand.pcf 
+par -w -intstyle ise -ol high -mt off significand_map.ncd significand.ncd significand.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml significand.twx significand.ncd -o significand.twr significand.pcf 

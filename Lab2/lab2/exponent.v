@@ -30,7 +30,7 @@ module exponent(
 
 	 sign s1(.D(D), .sgn(sgn), .D_new(D_new));
 
-	 always @*
+	 always @D
 	 begin
 
 	   if (D_new[11:4] == 8'b00000000)
