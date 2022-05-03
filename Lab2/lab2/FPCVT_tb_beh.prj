@@ -1,6 +1,0 @@
-verilog work "sign.v"
-verilog work "exponent.v"
-verilog work "significand.v"
-verilog work "FPCVT.v"
-verilog work "FPCVT_tb.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
