@@ -1,0 +1,74 @@
+				else
+begin
+					max_vert_pos = max_vert_pos - blk_size;
+				//screen[hor_pos + hbp][vert_pos] = 1;
+					for (integer i = 0; i < 64; i = i+1)
+					begin
+						for (integer j = 0; j < 64; j = j+1)
+						begin
+							screen[hbp+hor_pos+i][vbp+vert_pos+j] = 1;
+						end
+					end
+					vert_pos = 0;
+					hor_pos = 160;
+				end
+
+
+
+				if (160 <= hor_pos < 160 + blk_size)
+				begin
+					curr_max_vert = max_vert_pos[0];
+				end
+				else if (160 + blk_size <= hor_pos < 160 + (2 * blk_size))
+				begin
+					curr_max_vert = max_vert_pos[1];
+				end
+
+
+
+				
+//				if (hor_pos + 64 < max_hor_pos)
+//					hor_pos = hor_pos + 1;
+
+
+
+	for (c = 0; c < 10; c = c + 1)
+	begin
+		max_vert_pos[c] = 480;
+	end
+
+
+
+
+				// if there is not currently a block 64 pixels below us, then increment vert_pos
+				if (screen[vert_pos + 64][hor_pos] != 1)
+					vert_pos = vert_pos + 1;
+				else
+				begin
+					// screen rows: max_vert_pos - block_size : max_vert_pos
+					// screen cols: hor_pos : hor_pos + block_size
+					
+					// save current block position
+					// update all pixels that the square covers once it reaches the bottom
+					for (i = vert_pos; i < vert_pos + 64; i = i + 1)
+					begin
+						for (j = hor_pos; j < hor_pos + 64; j = j + 1)
+							begin
+								screen[i][j] = 1;
+							end
+					end
+					
+					vert_pos = 0;
+					hor_pos = 160;
+					
+				end
+
+
+
+
+	if (screen[hbp+hor_pos][vbp+vert_pos] == 1)
+	begin
+		red = 3'b010;
+		green = 3'b110;
+		blue = 2'b11;
+	end

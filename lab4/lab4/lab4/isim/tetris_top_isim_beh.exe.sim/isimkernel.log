@@ -1,0 +1,29 @@
+Command line:
+   tetris_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52917
+
+Thu May 26 17:15:34 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.7 Meg
+
+ Total Signals          : 68
+ Total Nets             : 53
+ Total Signal Drivers   : 26
+ Total Blocks           : 13
+ Total Primitive Blocks : 10
+ Total Processes        : 48
+ Total Traceable Variables  : 70
+ Total Scalar Nets and Variables : 6479
+Total Line Count : 220
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 4678.84 Meg
+
+Thu May 26 17:30:10 2022
+

@@ -1,0 +1,5 @@
+verilog work "segdisplay.v"
+verilog work "vga640x480.v"
+verilog work "debouncer.v"
+verilog work "clockdiv.v"
+verilog work "TETRIS_top.v"

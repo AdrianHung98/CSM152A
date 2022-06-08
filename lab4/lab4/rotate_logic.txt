@@ -1,0 +1,18 @@
+for (i = 0; i < all_1s; i = i + 1)
+				begin
+					for (j = 0; j <= 9; j = j + 1)
+					begin
+						temp_gameboard[((i + 10) * 10) + j] = gameboard[(i * 10) + j];
+					end
+				end
+				
+				for (i = all_1s + 1; i <= 14; i = i + 1)
+				begin
+					for (j = 0; j <= 9; j = j + 1)
+					begin
+						temp_gameboard[(i * 10) + j] = gameboard[(i * 10) + j];
+					end
+				end
+				
+				gameboard = temp_gameboard;
+				i = i - 1;

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Student\Desktop\temporary_folder_cs152a\lab4\lab4\lab4\tetris_top.ncd
+OUTFILE=C:\Users\Student\Desktop\temporary_folder_cs152a\lab4\lab4\lab4\tetris_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Student\Desktop\temporary_folder_cs152a\lab4\lab4\lab4
+LICENSE=WebPack
+USER_INFO=211888400_0_0_236

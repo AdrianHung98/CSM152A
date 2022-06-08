@@ -1,0 +1,502 @@
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6-lab4/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/section6/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.xst" -ofn "C:/Users/Student/Desktop/temporary_folder_cs152a/lab4/lab4/lab4/tetris_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 tetris_top.ngc tetris_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tetris_top_map.ncd tetris_top.ngd tetris_top.pcf 
+par -w -intstyle ise -ol high -mt off tetris_top_map.ncd tetris_top.ncd tetris_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tetris_top.twx tetris_top.ncd -o tetris_top.twr tetris_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f tetris_top.ut tetris_top.ncd 

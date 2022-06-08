@@ -1,0 +1,416 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    00:30:38 03/19/2013 
+// Design Name: 
+// Module Name:    vga640x480 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module vga640x480(
+	input wire dclk,			//pixel clock: 25MHz
+	input wire clr,			//asynchronous reset
+	input wire clk,
+	input wire clk_20hz,
+	input wire move_left,
+	input wire move_right,
+	output wire hsync,		//horizontal sync out
+	output wire vsync,		//vertical sync out
+	output reg [2:0] red,	//red vga output
+	output reg [2:0] green, //green vga output
+	output reg [1:0] blue	//blue vga output
+	);
+
+// video structure constants
+parameter hpixels = 800;// horizontal pixels per line
+parameter vlines = 521; // vertical lines per frame
+parameter hpulse = 96; 	// hsync pulse length
+parameter vpulse = 2; 	// vsync pulse length
+parameter hbp = 144; 	// end of horizontal back porch
+parameter hfp = 784; 	// beginning of horizontal front porch
+parameter vbp = 31; 		// end of vertical back porch
+parameter vfp = 511; 	// beginning of vertical front porch
+parameter blk_size = 32; // width 1 block
+
+// active horizontal video is therefore: 784 - 144 = 640
+// active vertical video is therefore: 511 - 31 = 480
+
+// registers for storing the horizontal & vertical counters
+reg [9:0] hc;
+reg [9:0] vc;
+
+reg clk_1hz;
+
+integer screen[0:15][0:9];
+//reg [639:0] screen [0:479]; 
+// Horizontal & vertical counters --
+// this is how we keep track of where we are on the screen.
+// ------------------------
+// Sequential "always block", which is a block that is
+// only triggered on signal transitions or "edges".
+// posedge = rising edge  &  negedge = falling edge
+// Assignment statements can only be used on type "reg" and need to be of the "non-blocking" type: <=
+//integer vert_pos = 0;
+//integer hor_pos = 160;
+// integer max_vert_pos = 480;
+
+integer vert_block = 0;
+integer hor_block = 3;
+
+integer max_vert_pos [0:9];
+integer c = 0;
+integer i = 0;
+integer j = 0;
+integer curr_h_block;
+integer curr_max_vert = 480;
+integer v_block = 0;
+integer h_block = 0;
+integer vert_top_range = 0;
+integer vert_bot_range = 0;
+integer hor_top_range = 0;
+integer hor_bot_range = 0;
+
+
+initial begin
+	for (i = 0; i < 15; i = i + 1)
+	begin
+		for (j = 0; j < 10; j = j + 1)
+		begin
+			screen[i][j] = 0;
+		end
+	end
+	
+
+end
+
+reg [28:0] counter_1hz = 29'b0;
+
+
+
+always @(posedge clk)
+begin
+
+	counter_1hz <= counter_1hz + 1'b1;
+		
+	if (counter_1hz == 29'd60000000) begin //d60000000
+		clk_1hz <= ~clk_1hz;
+		counter_1hz <= 29'b0;
+	end
+
+end
+
+
+integer max_hor_pos = 480;
+always @(posedge dclk or posedge clr)
+begin
+	// reset condition
+	if (clr == 1)
+	begin
+		hc <= 0;
+		vc <= 0;
+	end
+	else
+	begin
+		// keep counting until the end of the line
+		if (hc < hpixels - 1)
+			hc <= hc + 1;
+		else
+		// When we hit the end of the line, reset the horizontal
+		// counter and increment the vertical counter.
+		// If vertical counter is at the end of the frame, then
+		// reset that one too.
+		begin
+			hc <= 0;
+			if (vc < vlines - 1)
+				vc <= vc + 1;
+			else
+			begin
+				vc <= 0;		
+			end
+		end
+		
+	end
+end
+
+// generate sync pulses (active low)
+// ----------------
+// "assign" statements are a quick way to
+// give values to variables of type: wire
+assign hsync = (hc < hpulse) ? 0:1;
+assign vsync = (vc < vpulse) ? 0:1;
+
+//left_movement lm(.screen(screen), .orig_hor_block(hor_block), .vert_block(vert_block), .hor_block(hor_block));
+
+// display 100% saturation colorbars
+// ------------------------
+// Combinational "always block", which is a block that is
+// triggered when anything in the "sensitivity list" changes.
+// The asterisk implies that everything that is capable of triggering the block
+// is automatically included in the sensitivty list.  In this case, it would be
+// equivalent to the following: always @(hc, vc)
+// Assignment statements can only be used on type "reg" and should be of the "blocking" type: =
+
+		// horizontal movement
+//		if (hor_block == 8)
+//		begin
+//			hor_block = 0;
+//		end
+//		else
+//		begin
+//			hor_block = hor_block + 1;
+//		end
+
+
+always @(posedge clk_1hz)
+begin
+	// vertical movement
+	// if the next block below already has a block, save our block in this position
+	// and start the next new block
+	if (vert_block == 13 || screen[vert_block + 2][hor_block] == 1 || screen[vert_block + 2][hor_block + 1] == 1)
+	begin
+		// save position
+		screen[vert_block][hor_block] = 1;
+		screen[vert_block + 1][hor_block] = 1;
+		screen[vert_block][hor_block + 1] = 1;
+		screen[vert_block + 1][hor_block + 1] = 1;
+		// reset positions
+		vert_block = 0;
+//			hor_block = 4;
+	end				
+	// else, incremenet the block
+	else
+	begin
+		vert_block = vert_block + 1;
+	end
+end
+
+always @(posedge move_right)
+begin
+	if (hor_block == 8 || screen[vert_block][hor_block + 2] == 1)
+	begin
+		// don't move right
+		hor_block = hor_block;
+	end
+	else
+	begin
+		// move one block right
+		hor_block = hor_block + 1;
+	end
+end
+
+//
+//always @(posedge move_left)
+//begin
+//	
+//	
+//	if (hor_block == 0)// || screen[vert_block][hor_block - 1] == 1)
+//	begin
+//		// don't move left
+//		hor_block = hor_block;
+//	end
+//	else
+//	begin
+//		// move left one block
+//		hor_block = hor_block - 1;
+//	end
+//end
+
+
+//always @(posedge move_left or posedge move_right)
+//begin
+//	if (move_left == 1)
+//	begin
+//		if (hor_block == 0)// || screen[vert_block][hor_block - 1] == 1)
+//		begin
+//			// don't move left
+//			hor_block = hor_block;
+//		end
+//		else
+//		begin
+//			// move left one block
+//			hor_block = hor_block - 1;
+//		end
+//	end
+//	else
+//	begin
+//		if (hor_block == 8)// || screen[vert_block][hor_block + 2] == 1)
+//		begin
+//			// don't move right
+//			hor_block = hor_block;
+//		end
+//		else
+//		begin
+//			// move one block right
+//			hor_block = hor_block + 1;
+//		end
+//	end
+//
+//end
+
+
+always @(*)
+begin
+
+			// show everything that has screen[i][j] = 1
+			// if vc and hc are in a block that has 1
+
+
+
+		// first check if we're within vertical active video range
+		if (vc >= vbp && vc < vfp)
+		begin
+			// now display different colors every 80 pixels
+			// while we're within the active horizontal range
+			// -----------------
+			// display white bar
+			// in gameboard
+			if (hc >= (hbp+160) && hc < (hbp+480))
+			begin
+			
+			
+				// showing active square
+				vert_bot_range = (vert_block * 32) + 0 + vbp;
+				vert_top_range = vert_bot_range + 64;
+				
+				hor_bot_range = (hor_block * 32) + 160 + hbp;
+				hor_top_range = hor_bot_range + 64;
+				// moving square
+				if (vc >= vert_bot_range && vc < vert_top_range && hc >= hor_bot_range && hc < hor_top_range)
+				begin
+						red = 3'b010;
+						green = 3'b110;
+						blue = 2'b11;
+				end
+				// background of gameboard + saved objects
+				else
+				begin
+					// calculate current block from pixel we are displaying
+//					v_block = (vc - vbp) >> 5;
+//					h_block = (hc - hbp - 160)>> 5;
+//					
+
+//					
+//					if (0 <= vc - vbp &&  vc - vbp < 32)
+//						v_block = 0;
+//					else if (32 <= vc - vbp && vc - vbp < 64)
+//						v_block = 1;
+//					else if (64 <= vc - vbp && vc - vbp< 96)
+//						v_block = 2;
+//					else if (96 <= vc - vbp && vc - vbp< 128)
+//						v_block = 3;
+//					else if (128 <= vc - vbp && vc - vbp< 160)
+//						v_block = 4;
+//					else if (160 <= vc - vbp && vc - vbp< 192)
+//						v_block = 5;
+//					else if (192 <= vc - vbp && vc - vbp< 224)
+//						v_block = 6;
+//					else if (224 <= vc - vbp && vc - vbp< 256)
+//						v_block = 7;
+//					else if (256 <= vc - vbp && vc - vbp< 288)
+//						v_block = 8;
+//					else if (288 <= vc - vbp && vc - vbp< 320)
+//						v_block = 9;
+//					else if (320 <= vc - vbp && vc - vbp< 352)
+//						v_block = 10;
+//					else if (352 <= vc - vbp && vc - vbp< 384)
+//						v_block = 11;
+//					else if (384 <= vc - vbp && vc - vbp< 416)
+//						v_block = 12;
+//					else if (416 <= vc - vbp && vc - vbp< 448)
+//						v_block = 13;
+//					else if (448 <= vc - vbp && vc - vbp< 480)
+//						v_block = 14;
+//
+//					if (160 + 0 <= hc - hbp && hc - hbp < 160 + 32)
+//						h_block = 0;
+//					else if (160 + 32 <= hc - hbp && hc - hbp< 160 + 64)
+//						h_block = 1;
+//					else if (160 + 64 <= hc - hbp && hc - hbp< 160 + 96)
+//						h_block = 2;
+//					else if (160 + 96 <= hc - hbp && hc - hbp< 160 + 128)
+//						h_block = 3;
+//					else if (160 + 128 <= hc - hbp && hc - hbp< 160 + 160)
+//						h_block = 4;
+//					else if (160 + 160 <= hc - hbp && hc - hbp< 160 + 192)
+//						h_block = 5;
+//					else if (160 + 192 <= hc - hbp && hc - hbp< 160 + 224)
+//						h_block = 6;
+//					else if (160 + 224 <= hc - hbp && hc - hbp< 160 + 256)
+//						h_block = 7;
+//					else if (160 + 256 <= hc - hbp && hc - hbp< 160 + 288)
+//						h_block = 8;
+//					else if (160 + 288 <= hc - hbp && hc - hbp< 160 + 320)
+//						h_block = 9;
+
+
+					
+					//if (screen[v_block][h_block] == 1)
+					if (vbp <= vc && vc < vbp + 32 && hbp + 160 <= hc && hc < hbp + 192)
+					begin
+						// dsplay square cyan
+						red = 3'b110;
+						green = 3'b110;
+						blue = 2'b11;
+					end
+					else
+					begin
+						//color white
+						red = 3'b111;
+						green = 3'b111;
+						blue = 2'b11;
+						
+//						if (screen[14][0] == 1)
+//						begin
+//							red = 3'b111;
+//							green = 3'b111;
+//							blue = 2'b11;
+//						end
+//						else if (screen[14][9] == 1)
+//						begin
+//							red = 3'b111;
+//							green = 3'b110;
+//							blue = 2'b11;
+//						end
+//						else
+//						begin
+//						red = 3'b111;
+//						green = 3'b111;
+//						blue = 2'b11;
+//						end
+					end
+				end
+			end
+			// we're outside active horizontal range so display black
+			else
+			begin
+				red = 0;
+				green = 0;
+				blue = 0;
+			end
+			
+			//display square
+		end
+		// we're outside active vertical range so display black
+		else
+		begin
+			red = 0;
+			green = 0;
+			blue = 0;
+		end
+			
+end
+
+endmodule
+
+
